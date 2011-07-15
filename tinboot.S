@@ -5,7 +5,7 @@
 @
 .equ    LOAD_START,     0x10000000
 .equ	TARGET_ADDR, 	0x00000000
-.equ	XIP_END,	0x2ff000
+.equ	XIP_END,	0x3f000
 
 		.org 0
 		b boot
@@ -69,5 +69,4 @@ kernel:
 		.incbin "lk.bin"
 		.align
 blobend:
-		.org XIP_END-0x20000,0xff
-		.incbin "emptyimgfs"
+		.end
