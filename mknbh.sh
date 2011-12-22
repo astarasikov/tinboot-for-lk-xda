@@ -3,12 +3,6 @@ export CROSS_COMPILE=arm-none-eabi-
 export AS=${CROSS_COMPILE}as
 export OBJCOPY=${CROSS_COMPILE}objcopy
 
-pushd .
-cd /home/alexander/handhelds/htc/lk-msm7200a-htc-wince
-bash photon.sh
-popd
-rm lk.bin
-cp /home/alexander/handhelds/htc/lk-msm7200a-htc-wince/build-msm7227_htc_wince/lk.bin .
 rm *.NBH
 rm out.nb
 rm tinboot tinboot.o

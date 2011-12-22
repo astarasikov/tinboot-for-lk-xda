@@ -5,7 +5,7 @@
 #define XIP_NAME "tinboot"
 #define OUT_NAME "out.nb"
 #define SECTOR 0x800
-#define TARGET_SIZE (0x40000 / 0x800)
+#define TARGET_SIZE (0xa00000 / 0x800)
 
 void concat(FILE *fin, FILE *fout) {
 	char buf[SECTOR];
